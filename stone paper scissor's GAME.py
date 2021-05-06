@@ -15,13 +15,10 @@ while True:
     except Exception as e:
         print('Please Enter Positive Integer Value more than Zero')
         continue
-##    except rounds==0 or rounds<0:
-##        print('Please Enter Positive Integer Value more than Zero')
-##        continue
     break
 
-while rounds!=0: # FOR TAKING INPUT
-    print('\nEnter Your Choice ')
+while rounds!=0: 
+    print('\nEnter Your Choice ')  # FOR TAKING INPUT
     user=int(input('1. STONE  \n2. PAPER  \n3. SCISSOR\n==>'))
     comp=rnd.choice(a)
     if user==1:
