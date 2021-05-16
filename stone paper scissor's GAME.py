@@ -1,10 +1,8 @@
 import random as rnd
 import time
 a=['STONE','PAPER','SCISSOR']
-
 upt=0#FOR STORING COMPUTER POINTS
 cpt=0#FOR STORING USER POINTS
-
 you=input('Enter Your Name : ')
 print(f'\nWelcome {you} to the Game ')
 while True:
@@ -32,11 +30,9 @@ while rounds!=0:
         continue
     time.sleep(0.3)
     print('Computer\'s Choice :',comp)
-
     rounds=rounds-1
-
+    
     while rounds>=0:#FOR DECIDING WINNER
-
         if user==1 :
             if comp=='PAPER':
                 print('\nComputer Wins')
@@ -76,11 +72,9 @@ while rounds!=0:
                 print('\nOhhh It\'s a Tie Break')
                 break
                 rounds=rounds-1
-
 print('\n\nTOTAL ROUNDS PLAYED :',total)
 print(f'\n{you}\'s TOTAL POINTS :',upt)
 print('COMPUTER\'s TOTAL POINTS :',cpt)
-
 if cpt>upt:
     print(f'\nOH NOO !!! {you} LOST THE GAME BY {cpt}-{upt}')
 elif cpt==upt:
